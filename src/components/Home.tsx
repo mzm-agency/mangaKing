@@ -22,7 +22,7 @@ const Home = () => {
     return (
         <div>
             <Banner />
-            <div className='container flex-col flex bg-[#e9e9e9]'>
+            <div className='container flex-col flex'>
                 <ProductList title='Онцлох манга' data={data} />
             </div>
         </div>

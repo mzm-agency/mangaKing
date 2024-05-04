@@ -31,6 +31,8 @@ module.exports = {
       sm: '.875rem',
       base: '1rem',
       md: '1.25rem',
+      lg: '1.75rem',
+      xl: '2rem',
     },
     extend: {
       backgroundImage: {
@@ -46,8 +48,20 @@ module.exports = {
         danger: '#ff514d',
         success: '#6fc600',
       }, 
+      borderColor: {
+        primary: '#ffdb26',
+        primaryDark: '#ffb726',
+        black: '#000',
+        dark: '#777777',
+        white: '#ffffff',
+        danger: '#ff514d',
+        success: '#6fc600',
+      },
       strokeWidth: {
         '0': '0',
+      },
+      boxShadow: {
+        'xl': '0 4px 6px 5px rgb(0, 0, 0,0.9)',
       }
     },
   },
