@@ -2,7 +2,7 @@ export const datas = [
     {
         title: 'The chronicle of seveen',
         ageRestriction: 13,
-        category: ['Comedy'],
+        category: ['Comedy','Comedy'],
         image: './manga/manga1.jpg'
     },
     {
