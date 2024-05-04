@@ -1,4 +1,4 @@
-import React from 'react'
+
 import ProductItem from './ProductItem'
 interface Props {
     title: string
@@ -6,6 +6,8 @@ interface Props {
 }
 
 const ProductList = ({ title, data }: Props) => {
+
+
     return (
         <div className='mx-4 my-12'>
             <h1 className='text-lg pb-6 font-medium'>{title}</h1>

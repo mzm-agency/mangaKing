@@ -7,7 +7,7 @@ export const datas = [
     },
     {
         title: 'Becoming her Birte',
-        ageRestriction: 13,
+        ageRestriction: 14,
         category: ['Drama'],
         image: './manga/manga3.jpg'
     },
