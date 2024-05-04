@@ -5,24 +5,50 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      xss: '320px',
       xs: '375px',
-      xr: '414px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
-      my: '1200px',
       xl: '1280px',
-      '2xl': '1536px',
     },
-    colors: {
-      primary: '#ffd301',
-      secondary: '#FAFDFA',
-      black: '#2f2f2f',
-      white: '#f9f9f9'
+    fontFamily: {
+      light: "IBMPlexSans-Light",
+      regular: "IBMPlexSans-Regular",
+      medium: "IBMPlexSans-Medium",
+      semibold: "IBMPlexSans-SemiBold",
+      bold: "IBMPlexSans-Bold",
+    },
+    fontWeight: {
+      light: '300',
+      regular: '400',
+      medium: '500',
+      semibold: '600',
+      bold: '700',
+      extrabold: '800',
+    },
+    fontSize: {
+      xs: '.75rem',
+      sm: '.875rem',
+      base: '1rem',
+      md: '1.25rem',
     },
     extend: {
-      
+      backgroundImage: {
+        'prev-icon': "url('/assets/images/prev-icon.svg')",
+        'next-icon': "url('/assets/images/next-icon.svg')",
+      },
+      colors: {
+        primary: '#ffdb26',
+        primaryDark: '#ffb726',
+        black: '#000000',
+        dark: '#777777',
+        white: '#ffffff',
+        danger: '#ff514d',
+        success: '#6fc600',
+      }, 
+      strokeWidth: {
+        '0': '0',
+      }
     },
   },
   plugins: [],

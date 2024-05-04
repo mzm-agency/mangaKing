@@ -1,20 +1,71 @@
-import React from "react";
-// import logo from "../../public/mangakinglogo.png";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { Link, useLocation } from "react-router-dom";
+import { Daily, Genres, Library, Logo, New, Popular, Profile } from "../assets/icons";
+import Search from "../components/search/search";
+
+const Menu = [
+  { name: "Миний уншсан", 
+    link: `/`, 
+    icon: <Library /> 
+  },
+  { name: "Жанрууд", 
+    link: `/`, 
+    icon: <Genres /> 
+  },
+  { name: "Хуанли", 
+    link: `/`, 
+    icon: <Daily /> 
+  },
+  { name: "Шинэ", 
+    link: `/`, 
+    icon: <New /> 
+  },
+  { name: "Онцлох", 
+    link: `/`, 
+    icon: <Popular /> 
+  },
+];
 
 const Header = () => {
+  const location = useLocation();
   return (
-    <header className="w-full h-22 bg-red-100 py-3 bg-black">
-      <nav className="container flex items-center justify-between">
-        <div className="flex items-center gap-11">
-          <img className="h-8 w-auto" src={'/mangakinglogo.png'} />
-          <ul className="flex items-center gap-3">
-            <li className="text-sm text-white px-4 hover:text-primary transition-all cursor-pointer font-normal">Нүүр</li>
-            <li className="text-sm text-white px-4 hover:text-primary transition-all cursor-pointer font-normal">Онцлох</li>
-            <li className="text-sm text-white px-4 hover:text-primary transition-all cursor-pointer font-normal">Шинэ</li>
-          </ul>
+    <header className={`sticky top-0 bg-black z-50`}>
+      <div className={`container mx-auto`}>
+        <div className={`flex items-center justify-between h-[72px]`}>
+          <div className={`flex items-center gap-10`}>
+            <Link to={`/`}>
+              <Logo/>
+            </Link>
+            <nav className={`flex items-center gap-6`}>
+              {Menu?.map((item: any, index: number) => {
+                const active = location?.pathname == item.link;
+                return (
+                  <div key={`${index}`}>
+                    <Link
+                      to={`${item.link}`}
+                      target={`${item.target ? '_blank' : '_self'}`}
+                      className={`text-white font-semibold text-base flex items-center gap-1
+                      ${active ? '' : ''
+                        }`}>
+                      <div>{item.icon}</div>
+                      <div className={`whitespace-nowrap relative bottom-px`}>
+                        {item.name}
+                      </div>
+                    </Link>
+                  </div>
+                );
+              })}
+            </nav>
+          </div>
+          <div className={`flex items-center gap-4`}>
+            <Search title="Манга хайх..."/>
+            <Link to={`/`} className={`bg-white flex gap-2 items-center justify-center h-8 rounded-full px-3 hover:bg-primary transition-default`}>
+              <Profile/>
+              <span className={`text-sm font-bold`}>Аккаунт</span>
+            </Link>
+          </div>
         </div>
-        <div className="text-sm text-primary font-normal">Нэвтрэх</div>
-      </nav>
+      </div>
     </header>
   );
 };
