@@ -2,31 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* Font Start */
 @font-face {
-  font-family: 'IBMPlexSans-Light';
+  font-family: 'Exo2-Light';
   font-weight: 300;
-  src: url(./assets/fonts/IBMPlexSans-Light.ttf);
+  src: url(./assets/fonts/Exo2-Light.ttf);
 }
 @font-face {
-  font-family: 'IBMPlexSans-Regular';
+  font-family: 'Exo2-Regular';
   font-weight: 400;
-  src: url(./assets/fonts/IBMPlexSans-Regular.ttf);
+  src: url(./assets/fonts/Exo2-Regular.ttf);
 }
 @font-face {
-  font-family: 'IBMPlexSans-Medium';
+  font-family: 'Exo2-Medium';
   font-weight: 500;
-  src: url(./assets/fonts/IBMPlexSans-Medium.ttf);
+  src: url(./assets/fonts/Exo2-Medium.ttf);
 }
 @font-face {
-  font-family: 'IBMPlexSans-SemiBold';
+  font-family: 'Exo2-SemiBold';
   font-weight: 600;
-  src: url(./assets/fonts/IBMPlexSans-SemiBold.ttf);
+  src: url(./assets/fonts/Exo2-SemiBold.ttf);
 }
 @font-face {
-  font-family: 'IBMPlexSans-Bold';
+  font-family: 'Exo2-Bold';
   font-weight: 700;
-  src: url(./assets/fonts/IBMPlexSans-Bold.ttf);
+  src: url(./assets/fonts/Exo2-Bold.ttf);
+}
+@font-face {
+  font-family: 'Exo2-ExtraBold';
+  font-weight: 800;
+  src: url(./assets/fonts/Exo2-ExtraBold.ttf);
+}
+@font-face {
+  font-family: 'Exo2-Black';
+  font-weight: 700;
+  src: url(./assets/fonts/Exo2-Black.ttf);
 }
 /* Font End */
 
@@ -46,6 +57,9 @@
   transition: all 0.3s ease-out;
 }
 /* Transition End */
+.text-shadow {
+  text-shadow: 2px 0 2px rgba(0,0,0,.302),0 2px 2px rgba(0,0,0,.302),-2px 0 2px rgba(0,0,0,.302),0 -2px 2px rgba(0,0,0,.302);
+}
 .banner::after {
   background: linear-gradient(0deg,#fff 0,hsla(0,0%,100%,.74) 19%,hsla(0,0%,100%,.54) 34%,hsla(0,0%,100%,.38) 47%,hsla(0,0%,100%,.28) 56.5%,hsla(0,0%,100%,.19) 65%,hsla(0,0%,100%,.13) 73%,hsla(0,0%,100%,.08) 80.2%,hsla(0,0%,100%,.04) 86.1%,hsla(0,0%,100%,.02) 91%,hsla(0,0%,100%,.01) 95.2%,hsla(0,0%,100%,0) 98.2%,transparent);
 }

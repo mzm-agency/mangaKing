@@ -29,8 +29,8 @@ const Menu = [
 const Header = () => {
   const location = useLocation();
   return (
-    <header className={`sticky top-0 bg-black z-50`}>
-      <div className={`container mx-auto`}>
+    <header className={`sticky top-0 bg-secondary-950 z-50`}>
+      <div className={`max-w-container w-full mx-auto px-4`}>
         <div className={`flex items-center justify-between h-[72px]`}>
           <div className={`flex items-center gap-10`}>
             <Link to={`/`}>
@@ -59,9 +59,8 @@ const Header = () => {
           </div>
           <div className={`flex items-center gap-4`}>
             <Search title="Манга хайх..."/>
-            <Link to={`/`} className={`bg-white flex gap-2 items-center justify-center h-8 rounded-full px-3 hover:bg-primary transition-default`}>
-              <Profile/>
-              <span className={`text-sm font-bold`}>Аккаунт</span>
+            <Link to={`/`} className={`border border-white leading-[26px] h-8 rounded-full px-3`}>
+              <span className={`text-sm font-bold text-white`}>Нэвтрэх</span>
             </Link>
           </div>
         </div>
