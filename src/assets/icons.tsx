@@ -3,6 +3,30 @@ interface Props {
   height?: number;
 }
 
+export const Premium = ({ size }: Props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="none"
+      viewBox="0 0 16 16"
+    >
+      <g clipPath="url(#clip0_4_15048)">
+        <path
+          fill="#000"
+          d="M1.334 12.667h13.333v1.334H1.334v-1.334zm0-9.333l3.333 2 3.334-4 3.333 4 3.333-2v8H1.334v-8z"
+        ></path>
+      </g>
+      <defs>
+        <clipPath id="clip0_4_15048">
+          <path fill="#fff" d="M0 0H16V16H0z"></path>
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
 export const SearchBar = ({ size }: Props) => {
   return (
     <svg

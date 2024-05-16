@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Link, useLocation } from "react-router-dom";
-import { Daily, Genres, Library, Logo, New, Popular, Profile } from "../assets/icons";
+import { Daily, Genres, Library, Logo, New, Popular, Premium, Profile } from "../assets/icons";
 import Search from "../components/search/search";
+import { Button } from "../ui/Button";
 
 const Menu = [
   { name: "Миний уншсан", 
@@ -57,11 +58,13 @@ const Header = () => {
               })}
             </nav>
           </div>
-          <div className={`flex items-center gap-4`}>
+          <div className={`flex items-center gap-2`}>
             <Search title="Манга хайх..."/>
-            <Link to={`/`} className={`border border-white leading-[26px] h-8 rounded-full px-3`}>
-              <span className={`text-sm font-bold text-white`}>Нэвтрэх</span>
-            </Link>
+            <Button variant="link" size="xs">Нэвтрэх</Button>
+            <Button variant="primary" size="xs">
+              <Premium/>
+              Эрх авах
+            </Button>
           </div>
         </div>
       </div>
