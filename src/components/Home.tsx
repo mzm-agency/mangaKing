@@ -52,7 +52,6 @@ const Home = () => {
             </div>
         </div>
     )
-fb47e2d34ff956a2facc6a72ebdf14bbb31
 }
 
 export default Home
