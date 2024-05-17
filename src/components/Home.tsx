@@ -8,14 +8,14 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <div className={`max-w-container w-full mx-auto px-4 py-10`}>
+      <div className={`max-w-container w-full mx-auto py-10`}>
         <div className={`grid gap-6`}>
-          <h2 className={`text-40 text-secondary-950 font-bold uppercase`}>
+          <h2 className={`text-40 text-secondary-950 font-bold uppercase p-4`}>
             Топ 3 Манга
           </h2>
-          <Carousel>
-            <CarouselContent>
-              <CarouselItem className={`basis-1/3 pb-3`}>
+          <Carousel className={`xs:pl-0 lg:pl-4 xs:pr-0 lg:pr-4`}>
+            <CarouselContent className={`flex xs:gap-0 lg:gap-6`}>
+              <CarouselItem className={`xs:basis-[196px] lg:basis-[396px] pb-1.5`}>
                 <div className={`card relative overflow-hidden rounded-lg border-2 border-secondary-950`}>
                   <Link className={`relative w-full h-full before:absolute before:bottom-0 before:w-full before:h-full`} to={`#`}>
                     <img className={`object-cover w-full h-full`} src={`./manga/top-01.webp`} alt=''/>
@@ -32,7 +32,7 @@ const Home = () => {
                               <Star/>
                               <span className={`text-14 leading-none`}>5/5</span>
                             </div>
-                            <h3 className={`text-white text-24 leading-6`}>Амттай цус</h3>
+                            <h3 className={`text-white xs:text-16 lg:text-24 xs:leading-4 lg:leading-6`}>Амттай цус</h3>
                             <span className={`leading-none`} style={{color: '#ff80bd'}}>Хайр дурлал</span>
                           </div>
                           <div className={`bg-primary-400 flex items-center justify-center w-5 h-5`} style={{borderRadius: '4px 0 0'}}>
@@ -44,7 +44,7 @@ const Home = () => {
                   </Link>
                 </div>
               </CarouselItem>
-              <CarouselItem className={`basis-1/3 pb-3`}>
+              <CarouselItem className={`xs:basis-[196px] lg:basis-[396px] pb-1.5`}>
                 <div className={`card relative overflow-hidden rounded-lg border-2 border-secondary-950`}>
                   <Link className={`relative w-full h-full before:absolute before:bottom-0 before:w-full before:h-full`} to={`#`}>
                     <img className={`object-cover w-full h-full`} src={`./manga/top-02.webp`} alt=''/>
@@ -61,7 +61,7 @@ const Home = () => {
                               <Star/>
                               <span className={`text-14 leading-none`}>5/5</span>
                             </div>
-                            <h3 className={`text-white text-24 leading-6`}>Алуурчин</h3>
+                            <h3 className={`text-white xs:text-16 lg:text-24 xs:leading-4 lg:leading-6`}>Алуурчин</h3>
                             <span className={`leading-none`} style={{color: '#80a3ea'}}>Адал явдал</span>
                           </div>
                           <div className={`bg-primary-400 flex items-center justify-center w-5 h-5`} style={{borderRadius: '4px 0 0'}}>
@@ -73,7 +73,7 @@ const Home = () => {
                   </Link>
                 </div>
               </CarouselItem>
-              <CarouselItem className={`basis-1/3 pb-3`}>
+              <CarouselItem className={`xs:basis-[196px] lg:basis-[396px] pb-1.5`}>
                 <div className={`card relative overflow-hidden rounded-lg border-2 border-secondary-950`}>
                   <Link className={`relative w-full h-full before:absolute before:bottom-0 before:w-full before:h-full`} to={`#`}>
                     <img className={`object-cover w-full h-full`} src={`./manga/top-03.webp`} alt=''/>
@@ -90,7 +90,7 @@ const Home = () => {
                               <Star/>
                               <span className={`text-14 leading-none`}>5/5</span>
                             </div>
-                            <h3 className={`text-white text-24 leading-6`}>Миний хайрт хань</h3>
+                            <h3 className={`text-white xs:text-16 lg:text-24 xs:leading-4 lg:leading-6`}>Миний хайрт хань</h3>
                             <span className={`leading-none`} style={{color: '#ff80bd'}}>Романтик</span>
                           </div>
                           <div className={`bg-primary-400 flex items-center justify-center w-5 h-5`} style={{borderRadius: '4px 0 0'}}>
