@@ -7,6 +7,7 @@ import 'swiper/css/navigation';
 
 import { Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
+import { Button } from '../ui/Button';
 
 
 const Banner = () => {
@@ -21,18 +22,18 @@ const Banner = () => {
             </picture>
             <div className={`w-full h-full absolute z-10 bottom-0 top-0 flex items-center`}>
               <div className={`max-w-container w-full mx-auto`}>
-                <div className={`inline-flex h-5 text-xs font-bold rounded-md px-1 mb-2 leading-[18px]`} style={{backgroundColor: '#ff80bd'}}>
+                <div className={`inline-flex h-5 text-12 font-bold rounded-md px-1 mb-2 leading-[18px]`} style={{backgroundColor: '#ff80bd'}}>
                   Хайр дурлал
                 </div>
-                <div className={`text-white text-sm font-medium text-shadow line-clamp-3 mb-4 w-96`}>
+                <div className={`text-white text-14 font-medium text-shadow line-clamp-3 mb-4 w-96`}>
                   Хэсон амьдралынхаа туршид өөрийгөө удамшлын сугалаанд хожиж альфа хэмээн бодож амьдарсан. 
                   Гэвч тэр өөрийгөө альфа биш доод гаралтай омега гэдгээ мэдэх үед амьдрал нь орвонгоороо эргэв. 
                   Энэ нөхцөл байдал нь омега нартай байж чаддаггүй альфа болох Дужинтай байнга учирснаар хязгаартаа хүрэх аж. 
                   Омегаверсийн ертөнцөд хөл тавьж юу тэдний судасны цохилтыг хурдасгаж, бие нь өөрийн мэдрэлгүй болгож буйг олж мэдээрэй.
                 </div>  
-                <div className={`bg-primary-400 hover:bg-primary-600 transition-default rounded-full inline-flex h-9 px-4 leading-[34px]`}>
-                  <span className={`font-bold text-base`}>Цааш унших</span>
-                </div>
+                <Button variant="primary" size="sm">
+                  Цааш унших
+                </Button>
               </div>
             </div>
           </Link>
@@ -47,18 +48,18 @@ const Banner = () => {
             </picture>
             <div className={`w-full h-full absolute z-10 bottom-0 top-0 flex items-center`}>
               <div className={`max-w-container w-full mx-auto`}>
-                <div className={`inline-flex h-5 text-xs font-bold rounded-md px-1 mb-2 leading-[18px]`} style={{backgroundColor: '#ffc68c'}}>
+                <div className={`inline-flex h-5 text-12 font-bold rounded-md px-1 mb-2 leading-[18px]`} style={{backgroundColor: '#ffc68c'}}>
                   Романтик
                 </div>
-                <div className={`text-white text-sm font-medium text-shadow line-clamp-3 mb-4 w-96`}>
+                <div className={`text-white text-14 font-medium text-shadow line-clamp-3 mb-4 w-96`}>
                   Хэсон амьдралынхаа туршид өөрийгөө удамшлын сугалаанд хожиж альфа хэмээн бодож амьдарсан. 
                   Гэвч тэр өөрийгөө альфа биш доод гаралтай омега гэдгээ мэдэх үед амьдрал нь орвонгоороо эргэв. 
                   Энэ нөхцөл байдал нь омега нартай байж чаддаггүй альфа болох Дужинтай байнга учирснаар хязгаартаа хүрэх аж. 
                   Омегаверсийн ертөнцөд хөл тавьж юу тэдний судасны цохилтыг хурдасгаж, бие нь өөрийн мэдрэлгүй болгож буйг олж мэдээрэй.
                 </div>  
-                <div className={`bg-primary-400 hover:bg-primary-600 transition-default rounded-full inline-flex h-9 px-4 leading-[34px]`}>
-                  <span className={`font-bold text-base`}>Цааш унших</span>
-                </div>
+                <Button variant="primary" size="sm">
+                  Цааш унших
+                </Button>
               </div>
             </div>
           </Link>
@@ -73,18 +74,18 @@ const Banner = () => {
             </picture>
             <div className={`w-full h-full absolute z-10 bottom-0 top-0 flex items-center`}>
               <div className={`max-w-container w-full mx-auto`}>
-                <div className={`inline-flex h-5 text-xs font-bold rounded-md px-1 mb-2 leading-[18px]`} style={{backgroundColor: '#ff80bd'}}>
+                <div className={`inline-flex h-5 text-12 font-bold rounded-md px-1 mb-2 leading-[18px]`} style={{backgroundColor: '#ff80bd'}}>
                   Тулаант
                 </div>
-                <div className={`text-white text-sm font-medium text-shadow line-clamp-3 mb-4 w-96`}>
+                <div className={`text-white text-14 font-medium text-shadow line-clamp-3 mb-4 w-96`}>
                   Хэсон амьдралынхаа туршид өөрийгөө удамшлын сугалаанд хожиж альфа хэмээн бодож амьдарсан. 
                   Гэвч тэр өөрийгөө альфа биш доод гаралтай омега гэдгээ мэдэх үед амьдрал нь орвонгоороо эргэв. 
                   Энэ нөхцөл байдал нь омега нартай байж чаддаггүй альфа болох Дужинтай байнга учирснаар хязгаартаа хүрэх аж. 
                   Омегаверсийн ертөнцөд хөл тавьж юу тэдний судасны цохилтыг хурдасгаж, бие нь өөрийн мэдрэлгүй болгож буйг олж мэдээрэй.
-                </div>  
-                <div className={`bg-primary-400 hover:bg-primary-600 transition-default rounded-full inline-flex h-9 px-4 leading-[34px]`}>
-                  <span className={`font-bold text-base`}>Цааш унших</span>
-                </div>
+                </div> 
+                <Button variant="primary" size="sm">
+                  Цааш унших
+                </Button>
               </div>
             </div>
           </Link>

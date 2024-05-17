@@ -45,7 +45,7 @@ const Header = () => {
                     <Link
                       to={`${item.link}`}
                       target={`${item.target ? '_blank' : '_self'}`}
-                      className={`text-white font-semibold text-base flex items-center gap-1
+                      className={`text-white font-semibold text-16 flex items-center gap-1
                       ${active ? '' : ''
                         }`}>
                       <div>{item.icon}</div>
@@ -60,7 +60,9 @@ const Header = () => {
           </div>
           <div className={`flex items-center gap-2`}>
             <Search title="Манга хайх..."/>
-            <Button variant="link" size="xs">Нэвтрэх</Button>
+            <Button variant="link" size="xs">
+              <Link to="/login" className={`text-white`}>Нэвтрэх</Link>
+            </Button>
             <Button variant="primary" size="xs">
               <Premium/>
               Эрх авах

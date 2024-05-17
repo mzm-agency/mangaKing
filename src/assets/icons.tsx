@@ -3,6 +3,23 @@ interface Props {
   height?: number;
 }
 
+export const Star = ({ size }: Props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="none"
+      viewBox="0 0 10 10"
+    >
+      <path
+        fill="#FFDB26"
+        d="M5 .208l1.76 2.577 2.995.878L7.85 6.134l.09 3.12L5 8.203l-2.939 1.05.09-3.12-1.906-2.47 2.994-.88L5 .209zM4.167 5h-.834a1.667 1.667 0 003.332.083L6.667 5h-.834a.833.833 0 01-1.664.063L4.167 5z"
+      ></path>
+    </svg>
+  );
+};
+
 export const Premium = ({ size }: Props) => {
   return (
     <svg

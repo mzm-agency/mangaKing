@@ -13,7 +13,7 @@ const Search = ({
       <SearchBar/>
     </span>
     <input
-      className={`bg-white text-dark rounded-full w-full h-8 pl-10 outline-none font-regular text-sm leading-none placeholder:text-dark`}
+      className={`bg-white  rounded-full w-full h-8 pl-10 outline-none font-regular text-14 leading-none placeholder:text-secondary-400`}
       placeholder={title}
       type="text"
     />

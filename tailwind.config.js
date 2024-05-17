@@ -30,12 +30,13 @@ module.exports = {
       black: '900',
     },
     fontSize: {
-      xs: '.75rem',
-      sm: '.875rem',
-      base: '1rem',
-      md: '1.25rem',
-      lg: '1.75rem',
-      xl: '2rem',
+      12: '.75rem',
+      14: '.875rem',
+      16: '1rem',
+      20: '1.25rem',
+      24: '1.5rem',
+      32: '2rem',
+      40: '2.5rem',
     },
     extend: {
       backgroundImage: {
@@ -73,9 +74,10 @@ module.exports = {
           900: '#3d3d3d',
           950: '#000000',
         },
+        white: '#ffffff'
       }, 
       boxShadow: {
-        'white': '2px 2px 0 #fff',
+        'white': '2px 2px 0 #ffffff',
       }
     },
   },

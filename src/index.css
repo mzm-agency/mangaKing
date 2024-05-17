@@ -117,3 +117,18 @@
 .banner .swiper-pagination-bullet-active {
   background: #ffdb26;
 }
+.card {
+  transition: filter .2s linear;
+  will-change: filter;
+  filter: drop-shadow(4px 4px 0 #000000);
+  background: linear-gradient(180.52deg,transparent 55.16%,rgba(0,0,0,.7) 100.49%);
+}
+.card a {
+  -webkit-tap-highlight-color: transparent;
+}
+.card a::before {
+  background: linear-gradient(180.52deg,transparent 55.16%,rgba(0,0,0,.86) 100.49%);
+}
+.card:hover {
+  filter: drop-shadow(6px 6px 0 #000000);
+}
