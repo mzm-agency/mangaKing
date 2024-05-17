@@ -78,7 +78,10 @@ module.exports = {
       }, 
       boxShadow: {
         'white': '2px 2px 0 #ffffff',
-      }
+      },
+      flex: {
+        'image': '0 0 auto'
+      },
     },
   },
   plugins: [],

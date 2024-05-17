@@ -132,3 +132,9 @@
 .card:hover {
   filter: drop-shadow(6px 6px 0 #000000);
 }
+.category a img {
+  box-shadow: 4px 4px 0 #000;
+}
+.category a:hover img {
+  box-shadow: 6px 6px 0 #000;
+}
