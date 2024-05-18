@@ -5,7 +5,7 @@ import Search from "../components/search/search";
 import { Button } from "../ui/Button";
 
 const Menu = [
-  { name: "Уншсан", 
+  { name: "Тэмдэглэл", 
     link: `/`, 
     icon: <Library /> 
   },
