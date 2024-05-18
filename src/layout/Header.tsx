@@ -31,9 +31,9 @@ const Header = () => {
   const location = useLocation();
   return (
     <header className={`sticky top-0 bg-secondary-950 z-50`}>
-      <div className={`max-w-container w-full mx-auto px-4`}>
-        <div className={`xs:block lg:flex items-center justify-between w-full xs:h-auto lg:h-[72px] xs:py-2 lg:py-0`}>
-          <div className={`xs:grid lg:flex items-center gap-10`}>
+      <div className={`max-w-container w-full mx-auto xs:px-0 lg:px-4`}>
+        <div className={`xs:block lg:flex items-center justify-between w-full xs:h-auto lg:h-[72px] xs:py-1 lg:py-0`}>
+          <div className={`xs:grid lg:flex items-center xs:gap-2 lg:gap-10`}>
             <div className={`mx-auto`}>
               <Link to={`/`}>
                 <img width={108} src={`/logo-small.png`}/>

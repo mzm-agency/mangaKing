@@ -60,10 +60,10 @@
 .text-shadow {
   text-shadow: 2px 0 2px rgba(0,0,0,.302),0 2px 2px rgba(0,0,0,.302),-2px 0 2px rgba(0,0,0,.302),0 -2px 2px rgba(0,0,0,.302);
 }
-.banner::after {
+.banner::before {
   background: linear-gradient(0deg,#fff 0,hsla(0,0%,100%,.74) 19%,hsla(0,0%,100%,.54) 34%,hsla(0,0%,100%,.38) 47%,hsla(0,0%,100%,.28) 56.5%,hsla(0,0%,100%,.19) 65%,hsla(0,0%,100%,.13) 73%,hsla(0,0%,100%,.08) 80.2%,hsla(0,0%,100%,.04) 86.1%,hsla(0,0%,100%,.02) 91%,hsla(0,0%,100%,.01) 95.2%,hsla(0,0%,100%,0) 98.2%,transparent);
 }
-.banner .swiper-button-prev, .banner .swiper-button-next {
+.default .swiper-button-prev, .default .swiper-button-next {
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
@@ -85,27 +85,27 @@
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.banner .swiper-button-prev::after, .swiper-button-next::after {
+.default .swiper-button-prev::after, .swiper-button-next::after {
   font-family: inherit;
   text-indent: -9999px;
 }
-.banner .swiper-button-prev {
+.default .swiper-button-prev {
   background-image: url(assets/images/prev-icon.svg);
   border-radius: 0 8px 8px 0;
   box-shadow: 2px 2px 0 #000;
   left: 0;
 }
-.banner .swiper-button-next {
+.default .swiper-button-next {
   background-image: url(assets/images/next-icon.svg);
   border-radius: 8px 0 0 8px;
   box-shadow: -2px 2px 0 #000;
   right: 0;
 }
-.banner .swiper-pagination {
+.default .swiper-pagination {
   bottom: 40px !important;
   z-index: 50;
 }
-.banner .swiper-pagination-bullet {
+.default .swiper-pagination-bullet {
   width: 16px;
   height: 16px;
   background: #fff;
@@ -113,11 +113,13 @@
   box-shadow: 1px 1px 0 #000;
   margin: 0 4px;
   opacity: 1;
+  margin: 2px !important;
 }
-.banner .swiper-pagination-bullet-active {
+.default .swiper-pagination-bullet-active {
   background: #ffdb26;
 }
 .card {
+  flex: 0 0 140px;
   transition: filter .2s linear;
   will-change: filter;
   filter: drop-shadow(4px 4px 0 #000000);
@@ -137,4 +139,40 @@
 }
 .category a:hover img {
   box-shadow: 6px 6px 0 #000;
+}
+.gutter-none {
+  margin: 0 -16px;
+  padding: 0 16px;
+}
+.scrolling::-webkit-scrollbar {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  .swiper-button-next, .swiper-button-prev {
+    display: none !important;
+  }
+  .default .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+}
+@media only screen and (max-width: 567px) {
+  .top .card {
+    flex: 0 0 200px;
+  }
+}
+@media only screen and (min-width: 567px) {
+  .top .card {
+    flex: 0 0 308px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .card {
+    flex: 0 0 200px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .top .card {
+    flex: 00 396px;
+  }
 }
