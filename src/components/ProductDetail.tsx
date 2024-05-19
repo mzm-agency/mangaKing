@@ -2,7 +2,9 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 
 const ProductDetail = () => {
+  
   const { slug } = useParams()
+  console.log("🚀 ~ ProductDetail ~ slug:", slug)
 
   const people = [{ name: 'Stom', job: false }, { name: 'Sumbe', job: false }, { name: 'Elsa', job: true }]
 
@@ -29,7 +31,7 @@ const ProductDetail = () => {
             </div>
           </div>
           <div className="w-1/2">
-            <img className={`w-full object-cover object-center border-2 border-black rounded-2xl`} src='/banner/02.webp' />
+            <img className={`w-full object-cover object-center border-2 border-black rounded-2xl`} src='/banner/desktop-01.webp' />
           </div>
         </div>
         <div className="flex gap-12 mt-6">
@@ -42,7 +44,7 @@ const ProductDetail = () => {
                 return (
                   <Link to={`/product/${slug}/read/${index}`} key={index} className="flex items-center justify-between border-b border-b-gray-200 last:border-b-0 first:border-t py-3">
                     <div className="flex items-center gap-4">
-                      <img className={`w-[240px] h-[120px] object-cover object-center border-2 border-black rounded-2xl`} src='/banner/02.webp' />
+                      <img className={`w-[240px] h-[120px] object-cover object-center border-2 border-black rounded-2xl`} src='/banner/desktop-01.webp' />
                       <div className="grid gap-2 text-lg font-semibold text-black">
                         {index}-р анги
                         <p className="leading-none text-sm font-regular text-gray-400">3-сар 10нд , 2024</p>
@@ -61,7 +63,7 @@ const ProductDetail = () => {
                 return (
                   <div key={index} className="flex items-center justify-between border-b border-b-gray-200 first:border-t first:border-t-gray-200 last:border-b-0 py-3">
                     <div className="flex items-center gap-4">
-                      <img className={`w-[240px] h-[120px] object-cover object-center border-2 border-black rounded-2xl`} src='/banner/02.webp' />
+                      <img className={`w-[240px] h-[120px] object-cover object-center border-2 border-black rounded-2xl`} src='/banner/desktop-01.webp' />
                       <div className="grid gap-2 text-lg font-semibold text-black">
                         {index}-р анги
                         <p className="leading-none text-sm font-regular text-gray-400">3-сар 10нд , 2024</p>
@@ -82,7 +84,7 @@ const ProductDetail = () => {
                   [1, 2, 3, 4].map((index: number) => {
                     return (
                       <div key={`index_${index}`} className="border-2 border-black rounded-xl">
-                        <img className="w-full h-auto object-cover object-center rounded-xl" src='/manga/item1.webp' />
+                        <img className="w-full h-auto object-cover object-center rounded-xl" src='/manga/top-02.webp' />
                       </div>
                     )
                   })

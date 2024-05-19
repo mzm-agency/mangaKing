@@ -2,122 +2,13 @@ import { Link } from 'react-router-dom'
 import Banner from '../shared/Banner'
 import { Carousel, CarouselContent, CarouselItem } from '../ui/carausel'
 import { Star } from '../assets/icons'
+import { popular, something, top } from '../lib/dummyData';
 
-const top = [
-  {
-    image: "./manga/top-01.webp",
-    number: "1",
-    name: "Амттай цус",
-    rating: "5/5",
-    category: "Хайр дурлал",
-    views: "36",
-    color: "#ff80bd",
-  },
-  {
-    image: "./manga/top-02.webp",
-    number: "2",
-    name: "Алуурчин",
-    rating: "5/5",
-    category: "Тулаант",
-    views: "28",
-    color: "#80a3ea",
-  },
-  {
-    image: "./manga/top-03.webp",
-    number: "3",
-    name: "Миний хайрт хань",
-    rating: "5/5",
-    category: "Романтик",
-    views: "41",
-    color: "#f1de15",
-  },
-];
 
-const something = [
-  {
-    image: "./manga/something-01.webp",
-    name: "Шидэт сарнай",
-    rating: "5/5",
-    category: "Адал явдал",
-    views: "36",
-    color: "#80a3ea",
-  },
-  {
-    image: "./manga/something-02.webp",
-    name: "Миний таван нэрт дайчдын түүх",
-    rating: "5/5",
-    category: "Хайр дурлал",
-    views: "28",
-    color: "#f12867",
-  },
-  {
-    image: "./manga/something-03.webp",
-    name: "Ичгүүргүй илбэчин",
-    rating: "5/5",
-    category: "Романтик",
-    views: "41",
-    color: "#f1de15",
-  },
-  {
-    image: "./manga/something-04.webp",
-    name: "Тоглоом дахин давтагдана",
-    rating: "5/5",
-    category: "Хүчтэн",
-    views: "44",
-    color: "#37a5b3",
-  },
-  {
-    image: "./manga/something-05.webp",
-    name: "Хөрөнгө оруулагч Z! Нөлөөлөл",
-    rating: "5/5",
-    category: "Тулаант",
-    views: "32",
-    color: "#54cf17",
-  },
-  {
-    image: "./manga/something-06.webp",
-    name: "Чамтай өнгөрөөсөн сайхан цаг минь",
-    rating: "5/5",
-    category: "Хайр дурлал",
-    views: "26",
-    color: "#fe3aff",
-  },
-];
 
-const popular = [
-  {
-    image: "./manga/popular-01.webp",
-    name: "Агуу зүйл бүтээх зам",
-    rating: "5/5",
-    category: "Адал явдал",
-    views: "36",
-    color: "#80a3ea",
-  },
-  {
-    image: "./manga/popular-02.webp",
-    name: "Хаалттай хот",
-    rating: "5/5",
-    category: "Хайр дурлал",
-    views: "28",
-    color: "#f12867",
-  },
-  {
-    image: "./manga/popular-03.webp",
-    name: "Эзэнт гүрний сэнтий",
-    rating: "5/5",
-    category: "Романтик",
-    views: "41",
-    color: "#f1de15",
-  },
-  {
-    image: "./manga/popular-04.webp",
-    name: "Тоглоом дахин давтагдана",
-    rating: "5/5",
-    category: "Хүчтэн",
-    views: "44",
-    color: "#37a5b3",
-  },
-];
+
+
+
 
 const Home = () => {
   return (
@@ -132,7 +23,7 @@ const Home = () => {
             {(top || []).map((item: any) => {
               return (
                 <div key={item} className={`overflow-hidden card relative rounded-lg border-2 border-secondary-950`}>
-                  <Link className={`w-full h-full before:absolute before:bottom-0 before:w-full before:h-full`} to={`#`}>
+                  <Link to={`/product/${item.id}`} className={`w-full h-full before:absolute before:bottom-0 before:w-full before:h-full`} >
                     <img className={`object-cover w-full h-full`} src={`${item.image}`} alt=''/>
                     <div className={`absolute top-0 left-0 w-full h-full z-10`}>
                       <div className={`flex flex-col h-full font-semibold`}>
@@ -170,7 +61,7 @@ const Home = () => {
             {(something || []).map((item: any) => {
               return (
                 <div key={item} className={`card relative overflow-hidden rounded-lg border-2 border-secondary-950`}>
-                  <Link className={`w-full h-full before:absolute before:bottom-0 before:w-full before:h-full`} to={`#`}>
+                  <Link to={`/product/${item.id}`} className={`w-full h-full before:absolute before:bottom-0 before:w-full before:h-full`} >
                     <img className={`object-cover w-full h-full`} src={`${item.image}`} alt=''/>
                     <div className={`absolute top-0 bottom-0 left-0 w-full h-full z-10`}>
                       <div className={`flex flex-col h-full font-semibold`}>
@@ -247,7 +138,7 @@ const Home = () => {
             {(popular || []).map((item: any) => {
               return (
                 <div key={item} className={`overflow-hidden card relative rounded-lg border-2 border-secondary-950`}>
-                  <Link className={`w-full h-full before:absolute before:bottom-0 before:w-full before:h-full`} to={`#`}>
+                  <Link to={`/product/${item?.id}`} className={`w-full h-full before:absolute before:bottom-0 before:w-full before:h-full`} >
                     <img className={`object-cover w-full h-full`} src={`${item.image}`} alt=''/>
                     <div className={`absolute top-0 left-0 w-full h-full z-10`}>
                       <div className={`flex flex-col h-full font-semibold`}>
