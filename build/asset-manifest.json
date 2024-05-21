@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6fd99394.css",
+    "main.js": "/static/js/main.26f8e669.js",
+    "static/media/Exo2-ExtraBold.ttf": "/static/media/Exo2-ExtraBold.d3226e5c70d672dcd164.ttf",
+    "static/media/Exo2-Bold.ttf": "/static/media/Exo2-Bold.343af6210440d7ad761e.ttf",
+    "static/media/Exo2-Black.ttf": "/static/media/Exo2-Black.08c757a932e9460bc33f.ttf",
+    "static/media/Exo2-SemiBold.ttf": "/static/media/Exo2-SemiBold.db9f3bb7774abc4fe4b0.ttf",
+    "static/media/Exo2-Medium.ttf": "/static/media/Exo2-Medium.2652eb40eee461d69f6b.ttf",
+    "static/media/Exo2-Regular.ttf": "/static/media/Exo2-Regular.d8703b6aa928306cccf5.ttf",
+    "static/media/Exo2-Light.ttf": "/static/media/Exo2-Light.ab046b24953ceb68bdc9.ttf",
+    "index.html": "/index.html",
+    "static/media/prev-icon.svg": "/static/media/prev-icon.cc2b96a6a7a8c4f712af.svg",
+    "static/media/next-icon.svg": "/static/media/next-icon.b582615d3295fd537028.svg",
+    "main.6fd99394.css.map": "/static/css/main.6fd99394.css.map",
+    "main.26f8e669.js.map": "/static/js/main.26f8e669.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6fd99394.css",
+    "static/js/main.26f8e669.js"
+  ]
+}
