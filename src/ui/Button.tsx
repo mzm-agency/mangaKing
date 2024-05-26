@@ -10,6 +10,7 @@ const buttonVariants = cva(
       variant: {
         primary: "text-secondary-950 bg-primary-400 hover:bg-primary-600",
         link: "text-white border border-white hover:shadow-white",
+        default: "text-white",
       },
       size: {
         xs: 'h-8 px-4 text-14',

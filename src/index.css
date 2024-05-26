@@ -106,8 +106,8 @@
   z-index: 50;
 }
 .default .swiper-pagination-bullet {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   background: #fff;
   border: 1px solid #000;
   box-shadow: 1px 1px 0 #000;

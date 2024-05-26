@@ -1,14 +1,8 @@
 import { Link } from 'react-router-dom'
 import Banner from '../shared/Banner'
-import { Carousel, CarouselContent, CarouselItem } from '../ui/carausel'
 import { Star } from '../assets/icons'
 import { popular, something, top } from '../lib/dummyData';
-
-
-
-
-
-
+import { Button } from '../ui/Button';
 
 const Home = () => {
   return (
@@ -129,6 +123,39 @@ const Home = () => {
               </h4>
             </Link>
           </div>
+        </div>
+        <div className={`overflow-hidden rounded-2xl relative`}>
+         <Link to={`#`}>
+            <picture>
+              <source srcSet={`/banner/desktop-04.webp`} media="(min-width: 768px)" />
+              <img className={`object-cover object-center`} src={`/banner/mobile-04.webp`} alt="" />
+            </picture>
+            <div className={`absolute top-0 left-0 px-10 grid items-center h-full`}>
+              <div className={``}>
+                <div className={`grid gap-2`}>
+                  <div className={`text-primary-400 font-bold text-18`}>Танд таалдагдаж магадгүй</div>
+                  <img className={`object-cover object-center`} width={375} src={`/banner/banner-text.webp`} alt="" />
+                </div>
+                <div>
+                  <div className={`inline-flex text-10 font-semibold px-1 pb-px items-center leading-[18px] rounded-md my-1`} style={{backgroundColor: '#9cabc4'}}>Триллер</div>
+                  <div className={`text-white text-14 font-medium text-shadow line-clamp-3 mb-4 w-96`}>
+                    Хэсон амьдралынхаа туршид өөрийгөө удамшлын сугалаанд хожиж альфа хэмээн бодож амьдарсан. 
+                    Гэвч тэр өөрийгөө альфа биш доод гаралтай омега гэдгээ мэдэх үед амьдрал нь орвонгоороо эргэв. 
+                    Энэ нөхцөл байдал нь омега нартай байж чаддаггүй альфа болох Дужинтай байнга учирснаар хязгаартаа хүрэх аж. 
+                    Омегаверсийн ертөнцөд хөл тавьж юу тэдний судасны цохилтыг хурдасгаж, бие нь өөрийн мэдрэлгүй болгож буйг олж мэдээрэй.
+                  </div>
+                  <div className={`flex items-center gap-4`}>
+                    <Button variant="primary" size="sm">
+                      Шууд унших
+                    </Button>
+                    <div className={`text-white font-bold`}>
+                      Илүү дэлгэрэнгүй
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Link>
         </div>
         <div className={`grid xs:gap-4 lg:gap-8`}>
           <h2 className={`xs:text-20 lg:text-40 text-secondary-950 font-bold uppercase leading-none`}>
