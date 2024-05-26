@@ -130,7 +130,7 @@ const Home = () => {
               <source srcSet={`/banner/desktop-04.webp`} media="(min-width: 768px)" />
               <img className={`object-cover object-center`} src={`/banner/mobile-04.webp`} alt="" />
             </picture>
-            <div className={`absolute top-0 left-0 px-10 grid items-center h-full`}>
+            <div className={`absolute top-0 left-0 xs:px-4 lg:px-10 grid xs:items-start lg:items-center h-full xs:pt-4 lg:pt-0`}>
               <div className={``}>
                 <div className={`grid gap-2`}>
                   <div className={`text-primary-400 font-bold text-18`}>Танд таалдагдаж магадгүй</div>
