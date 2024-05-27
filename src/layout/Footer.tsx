@@ -5,7 +5,7 @@ import { ArrowDropdown, ArrowIconMd, Facebook, Instagram, TikTok } from '../asse
 const Footer = () => {
   return (
     <footer className={`bg-secondary-950 rounded-t-[28px] pt-10 pb-6 text-default-50 mt-6`}>
-      <div className={`max-w-container w-full mx-auto xs:px-0 lg:px-4 grid gap-12`}>
+      <div className={`max-w-container w-full mx-auto px-4 grid gap-12`}>
         <div className={`grid gap-8`}>
           <div className={`flex items-center justify-between`}>
             <Link to={`/`}>
@@ -18,7 +18,7 @@ const Footer = () => {
               </span>
             </Link>
           </div>
-          <div className={`flex gap-8 items-center`}>
+          <div className={`xs:grid lg:flex xs:gap-4 lg:gap-8 items-center`}>
             <Link className={`text-default-50 font-semibold text-[15px]`} to={`/`}>
               Манга Хааны тухай
             </Link>
@@ -36,7 +36,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className={`flex items-center justify-between`}>
+        <div className={`xs:grid lg:flex gap-4 items-center justify-between`}>
           <div className={`flex items-center gap-5`}>
             <Link target="_blank" to={`/`}>
               <Facebook/>
