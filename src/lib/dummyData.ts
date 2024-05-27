@@ -128,3 +128,42 @@ export const popular = [
       color: "#f1de15",
     },
   ];
+
+  export const reading = [
+    {
+      id: 1,
+      image: "./manga/reading-01.webp",
+      name: "Тэнгэрлэгийг цуглуулах",
+      rating: "5/5",
+      category: "Ер бусын",
+      views: "36",
+      color: "#37a5b3",
+    },
+    {
+      id: 2,
+      image: "./manga/reading-02.webp",
+      name: "Бид амархан үхэхгүй!",
+      rating: "5/5",
+      category: "Адал явдал",
+      views: "28",
+      color: "#80a3ea",
+    },
+    {
+      id: 3,
+      image: "./manga/reading-03.webp",
+      name: "Хязгааргүй байдал",
+      rating: "5/5",
+      category: "Триллер",
+      views: "28",
+      color: "#80a3ea",
+    },
+    {
+      id: 4,
+      image: "./manga/reading-04.webp",
+      name: "Нэг дэлхий. Нэг тулаан.",
+      rating: "5/5",
+      category: "Жүжиг",
+      views: "28",
+      color: "#97c256",
+    },
+  ];

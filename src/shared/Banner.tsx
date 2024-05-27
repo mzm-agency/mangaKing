@@ -52,7 +52,7 @@ const Banner = () => {
                     <div className={`inline-flex h-5 text-12 font-bold rounded-md px-1 mb-2 leading-[18px]`} style={{ backgroundColor: item.color }}>
                       Хайр дурлал
                     </div>
-                    <div className={`text-white text-14 font-medium text-shadow line-clamp-3 mb-4 w-96`}>
+                    <div className={`text-default-50 text-14 font-medium text-shadow line-clamp-3 mb-4 w-96`}>
                       Хэсон амьдралынхаа туршид өөрийгөө удамшлын сугалаанд хожиж альфа хэмээн бодож амьдарсан. 
                       Гэвч тэр өөрийгөө альфа биш доод гаралтай омега гэдгээ мэдэх үед амьдрал нь орвонгоороо эргэв. 
                       Энэ нөхцөл байдал нь омега нартай байж чаддаггүй альфа болох Дужинтай байнга учирснаар хязгаартаа хүрэх аж. 

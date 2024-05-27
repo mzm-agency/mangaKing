@@ -63,7 +63,7 @@ const Header = () => {
           <div className={`xs:hidden lg:flex items-center gap-2`}>
             <Search title="Манга хайх..."/>
             <Button variant="link" size="xs">
-              <Link to="/login" className={`text-white`}>Нэвтрэх</Link>
+              <Link to="/login" className={`text-default-50`}>Нэвтрэх</Link>
             </Button>
             <Button variant="primary" size="xs">
               <Premium/>

@@ -76,10 +76,13 @@ module.exports = {
           900: '#3d3d3d',
           950: '#000000',
         },
-        white: '#ffffff'
+        'default': {
+          50: '#ffffff',
+        },
       }, 
       boxShadow: {
         'white': '2px 2px 0 #ffffff',
+        'white-add': '4px 4px 0 #fff',
       },
       flex: {
         'image': '0 0 auto'
