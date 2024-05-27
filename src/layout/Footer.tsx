@@ -4,7 +4,7 @@ import { ArrowDropdown, ArrowIconMd, Facebook, Instagram, TikTok } from '../asse
 
 const Footer = () => {
   return (
-    <footer className={`bg-secondary-950 rounded-t-xl pt-10 pb-6 text-default-50`}>
+    <footer className={`bg-secondary-950 rounded-t-[28px] pt-10 pb-6 text-default-50 mt-6`}>
       <div className={`max-w-container w-full mx-auto xs:px-0 lg:px-4 grid gap-12`}>
         <div className={`grid gap-8`}>
           <div className={`flex items-center justify-between`}>
