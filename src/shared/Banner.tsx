@@ -35,7 +35,7 @@ const banner = [
 
 const Banner = () => {
   return (
-    <Swiper pagination={{
+    <Swiper navigation={true} pagination={{
       dynamicBullets: true,
     }} modules={[Navigation, Pagination]} className={`default relative`}>
       {(banner || []).map((item: any) => {

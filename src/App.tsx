@@ -5,6 +5,7 @@ import HomeLayout from "./layout/HomeLayout";
 import Home from "./components/Home";
 import ProductDetail from "./components/ProductDetail";
 import ReadDetail from "./components/ReadDetail";
+import MyLibrary from "./components/library/myLibrary";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
             <Route path="/" element={<HomeLayout />} >
               <Route index element={<Home />} />
               <Route path="/product/:slug" element={<ProductDetail />} />
-
+              <Route path="/library" element={<MyLibrary />} />
             </Route>
             <Route path="/product/:slug/read/:id" element={<ReadDetail />} />
           </Routes>

@@ -6,23 +6,23 @@ import { Button } from "../ui/Button";
 
 const Menu = [
   { name: "Тэмдэглэл", 
-    link: `/`, 
+    link: `/library`, 
     icon: <Library /> 
   },
   { name: "Жанрууд", 
-    link: `/`, 
+    link: `/con`, 
     icon: <Genres /> 
   },
   { name: "Хуанли", 
-    link: `/`, 
+    link: `/s`, 
     icon: <Daily /> 
   },
   { name: "Шинэ", 
-    link: `/`, 
+    link: `/c`, 
     icon: <New /> 
   },
   { name: "Онцлох", 
-    link: `/`, 
+    link: `/d`, 
     icon: <Popular /> 
   },
 ];
@@ -39,7 +39,7 @@ const Header = () => {
                 <img width={108} src={`/logo-small.png`}/>
               </Link>
             </div>
-            <div className={`xs:grid lg:flex grid-cols-5 items-center gap-6`}>
+            <div className={`xs:grid lg:flex grid-cols-5 items-center gap-2`}>
               {Menu?.map((item: any, index: number) => {
                 const active = location?.pathname == item.link;
                 return (
@@ -47,8 +47,8 @@ const Header = () => {
                     <Link
                       to={`${item.link}`}
                       target={`${item.target ? '_blank' : '_self'}`}
-                      className={`text-white font-semibold xs:text-12 lg:text-16 xs:grid lg:flex items-center gap-1
-                      ${active ? '' : ''
+                      className={`font-semibold xs:text-12 lg:text-16 xs:grid lg:flex items-center gap-1 px-2 py-0.5
+                      ${active ? 'bg-primary-400 active-menu rounded-lg' : 'text-default-50'
                         }`}>
                       <div className={`mx-auto`}>{item.icon}</div>
                       <div className={`whitespace-nowrap relative bottom-px xs:text-center lg:text-left`}>

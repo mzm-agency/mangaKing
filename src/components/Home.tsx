@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Banner from '../shared/Banner'
-import { ArrowIcon, ArrowIconMd, Star } from '../assets/icons'
+import { ArrowIconMd, Star } from '../assets/icons'
 import { popular, reading, something, top } from '../lib/dummyData';
 import { Button } from '../ui/Button';
 
@@ -13,7 +13,7 @@ const Home = () => {
           <h3 className={`xs:text-20 lg:text-40 text-secondary-950 font-bold uppercase leading-none`}>
             Үргэлжлүүлж унших
           </h3>
-          <div className={`flex gap-4 overflow-auto scrolling gutter-none !pb-2`}>
+          <div className={`flex gap-4 overflow-auto scrolling gutter-none !pb-2 more`}>
             {(reading || []).map((item: any) => {
               return (
                 <div key={item} className={`card relative overflow-hidden rounded-lg border-2 border-secondary-950`}>

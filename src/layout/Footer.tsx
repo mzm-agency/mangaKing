@@ -4,8 +4,8 @@ import { ArrowDropdown, ArrowIconMd, Facebook, Instagram, TikTok } from '../asse
 
 const Footer = () => {
   return (
-    <footer className={`bg-secondary-950 rounded-t-[28px] pt-10 pb-6 text-default-50 mt-6`}>
-      <div className={`max-w-container w-full mx-auto px-4 grid gap-12`}>
+    <footer className={`bg-secondary-950 rounded-t-[24px] xs:pt-8 lg:pt-12 xs:pb-4 lg:pb-8 text-default-50 xs:mt-0 lg:mt-12`}>
+      <div className={`max-w-container w-full mx-auto px-4 grid gap-16`}>
         <div className={`grid gap-8`}>
           <div className={`flex items-center justify-between`}>
             <Link to={`/`}>
@@ -48,7 +48,7 @@ const Footer = () => {
               <TikTok/>
             </Link>
           </div>
-          <p className={`text-12 font-medium`}>Бүх эрх хуулиар хамгаалагдсан © 2024. Manga King.</p>
+          <p className={`text-12 font-medium`}>© 2024. Manga King.</p>
         </div>
       </div>
     </footer>
