@@ -50,7 +50,7 @@ const Banner = () => {
                 <div className={`w-full h-full absolute z-10 bottom-0 top-0 flex items-center px-4`}>
                   <div className={`max-w-container w-full mx-auto`}>
                     <div className={`inline-flex h-5 text-12 font-bold rounded-md px-1 mb-2 leading-[18px]`} style={{ backgroundColor: item.color }}>
-                      Хайр дурлал
+                      {item.category}
                     </div>
                     <div className={`text-default-50 text-14 font-medium text-shadow line-clamp-3 mb-4 w-96`}>
                       Хэсон амьдралынхаа туршид өөрийгөө удамшлын сугалаанд хожиж альфа хэмээн бодож амьдарсан. 

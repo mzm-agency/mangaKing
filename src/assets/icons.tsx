@@ -3,6 +3,153 @@ interface Props {
   height?: number;
 }
 
+export const Save = ({ size }: Props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      className="off"
+      viewBox="0 0 32 32"
+    >
+      <path
+        fill="#000"
+        d="M25.334 18.667v4h4v2.666h-4.002l.002 4h-2.667l-.002-4h-3.998v-2.666h4v-4h2.666zM26.99 6.343a8 8 0 01.314 10.98l-1.893-1.891c1.775-2.032 1.681-5.219-.31-7.205-2.003-1.999-5.226-2.084-7.32-.204l-1.78 1.597-1.78-1.596a5.332 5.332 0 00-7.326.205 5.332 5.332 0 00-.256 7.268L17.883 26.76 16 28.647 4.694 17.324A8 8 0 0116 6.039c3.131-2.812 7.971-2.719 10.988.304h.002z"
+      ></path>
+    </svg>
+  );
+};
+
+export const Rate = ({ size }: Props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      fill="none"
+      viewBox="0 0 20 20"
+    >
+      <g clipPath="url(#clip0_2186_87081)">
+        <path
+          fill="#000"
+          d="M10 .417l3.522 5.152 5.989 1.758-3.813 4.941.18 6.239L10 16.408l-5.878 2.099.18-6.239L.489 7.327l5.99-1.758L10 .417zm0 2.953L7.518 7.002l-4.22 1.237 2.687 3.482-.128 4.396L10 14.638l4.142 1.479-.127-4.396 2.687-3.482-4.22-1.237L10 3.37zM8.333 10a1.667 1.667 0 003.334 0h1.666a3.333 3.333 0 01-6.666 0h1.666z"
+        ></path>
+      </g>
+      <defs>
+        <clipPath id="clip0_2186_87081">
+          <path fill="#fff" d="M0 0H20V20H0z"></path>
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+export const ArrowLeftFirst = ({ size }: Props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      className="header-episode__icon"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill="#fff"
+        d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414-4.95 4.95z"
+      ></path>
+    </svg>
+  );
+};
+
+export const ArrowLeft = ({ size }: Props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill="#8c877e"
+        d="M7.828 11H20v2H7.828l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414L7.828 11z"
+      ></path>
+    </svg>
+  );
+};
+
+export const ArrowRight = ({ size }: Props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill="#fff"
+        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2h12.172z"
+      ></path>
+    </svg>
+  );
+};
+
+
+export const Sort = ({ size }: Props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="none"
+      className="comic-list-head__sort-by-icon"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill="#000"
+        d="M13.333 2.667v8h2L12.667 14 10 10.666h2v-8h1.333zM8 12v1.333H2V12h6zm1.333-4.667v1.333H2V7.333h7.333zm0-4.667V4H2V2.667h7.333z"
+      ></path>
+    </svg>
+  );
+};
+
+export const ArrowRightFirst = ({ size }: Props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill="#000"
+        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2h12.172z"
+      ></path>
+    </svg>
+  );
+};
+
+export const List = ({ size }: Props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="25"
+      height="24"
+      fill="none"
+      viewBox="0 0 25 24"
+    >
+      <path
+      fill="#fff"
+      d="M8.5 4h13v2h-13V4zM5 6.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm0 7a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm0 6.9a1.5 1.5 0 110-3 1.5 1.5 0 010 3zM8.5 11h13v2h-13v-2zm0 7h13v2h-13v-2z"
+    ></path>
+    </svg>
+  );
+};
+
 export const Star = ({ size }: Props) => {
   return (
     <svg

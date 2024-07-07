@@ -62,7 +62,7 @@ const Home = () => {
             Топ 3 Манга
           </h2>
           <div className={`flex xs:gap-4 lg:gap-10 overflow-auto scrolling gutter-none top !pb-2`}>
-            {(top || []).map((item: any) => {
+            {(top || []).slice(0, 3).map((item: any) => {
               return (
                 <div key={item} className={`overflow-hidden card relative rounded-lg border-2 border-secondary-950`}>
                   <Link to={`/product/${item.id}`} className={`w-full h-full before:absolute before:bottom-0 before:w-full before:h-full`} >
@@ -212,7 +212,7 @@ const Home = () => {
             Санал болгое
           </h3>
           <div className={`grid xs:grid-cols-2 lg:grid-cols-4 xs:gap-2 lg:gap-4`}>
-            {(popular || []).map((item: any) => {
+            {(popular || []).slice(0, 4).map((item: any) => {
               return (
                 <div key={item} className={`overflow-hidden card relative rounded-lg border-2 border-secondary-950`}>
                   <Link to={`/product/${item?.id}`} className={`w-full h-full before:absolute before:bottom-0 before:w-full before:h-full`} >
